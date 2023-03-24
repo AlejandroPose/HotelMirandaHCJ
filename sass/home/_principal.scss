@@ -1,0 +1,81 @@
+@mixin button-style($backg-color) {
+    display: block;
+    width: 217px;
+    height: 60px;
+    background-color: $backg-color;
+    font-family: var(--font-archivo);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: var(--white-text);
+    cursor: pointer;
+}
+
+.principal {
+    background-color: var(--principal-background);
+    padding-bottom: 75px;
+
+    h4 {
+        width: 63%;
+        font-family: var(--font-archivo);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        color: var(--white-text);
+        padding-top: 145px;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+
+    h1 {
+        width: 90%;
+        font-family: var(--font-old-standard);
+        font-weight: 400;
+        font-size: 56px;
+        letter-spacing: -1.2px;
+        color: var(--white-text);
+        margin-left: 5%;
+        margin-bottom: 40px;
+    }
+
+    &__button--gold {
+        @include button-style(var(--gold));
+        border: none;
+        margin-bottom: 24px;
+        margin-left: 5%;
+    }
+
+    &__button--black {
+        @include button-style(var(--principal-background));
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .principal {
+        h4 {
+            margin-left: 19.5%;
+        }
+
+        h1 {
+            width: 50%;
+            margin-left: 19.5%;
+            font-size: 120px;
+        }
+
+        &__button--gold {
+            margin-left: 19.5%;
+        }
+
+        &__button--black {
+            margin-left: 30px;
+        }
+
+        &__button--gold,
+        &__button--black {
+            display: inline;
+            
+        }
+    }
+}

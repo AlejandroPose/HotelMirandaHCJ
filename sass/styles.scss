@@ -1,0 +1,52 @@
+@use 'home/header';
+@use 'home/principal';
+@use 'home/check-in';
+@use 'home/discover';
+@use 'home/rooms';
+@use 'home/intro-video';
+@use 'home/facilities';
+@use 'home/food-menu';
+@use 'home/stats';
+@use 'home/footer';
+@use 'about-us/about-us-principal';
+@use 'about-us/about-us-section-1';
+@use 'about-us/about-us-restaurant';
+@use 'about-us/about-us-facilities';
+@use 'about-us/about-us-counter';
+@use 'rooms/rooms-principal';
+@use 'rooms/rooms-slider';
+@use 'offers/offers-principal';
+@use 'offers/offers-deals';
+@use 'offers/offers-popular';
+@use 'contact/contact-principal';
+@use 'contact/contact-data';
+@use 'contact/contact-map';
+@use 'contact/contact-form';
+@use 'details/details-amenities';
+@use 'details/details-availability';
+@use 'details/details-room';
+@use 'details/details-cancellation';
+@use 'details/details-related-rooms';
+
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+:root {
+    --principal-background: #333333;
+    --white-text: #ffffff;
+    --gold: #BEAD8E;
+    --secondary-background: #222222;
+    --sections-color-letter: #777777;
+    --color-titles: #111;
+
+    --font-archivo: 'Archivo';
+    --font-old-standard: 'Old Standard TT';
+    --font-roboto: 'Roboto';
+}
